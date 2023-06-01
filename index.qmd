@@ -17,7 +17,7 @@ format:
   html:
     css: styles.css
     theme: cosmo
-    monobackgroundcolor: "#000040"
+    monobackgroundcolor: "#FFFFC0"
 ---
 
 ::: {.callout-note}
