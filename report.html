@@ -1,0 +1,1722 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="uk-UA" xml:lang="uk-UA"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.80">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Півень Ксенія Олександрівна">
+
+<title>Дослідження взаємозвʼязку між шкільним благополуччям та тестовою/екзаменаційною тривогою</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="report_files/libs/clipboard/clipboard.min.js"></script>
+<script src="report_files/libs/quarto-html/quarto.js"></script>
+<script src="report_files/libs/quarto-html/popper.min.js"></script>
+<script src="report_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="report_files/libs/quarto-html/anchor.min.js"></script>
+<link href="report_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="report_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="report_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="report_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="report_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article toc-left">
+<div id="quarto-sidebar-toc-left" class="sidebar toc-left">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Зміст</h2>
+   
+  <ul>
+  <li><a href="#вступ" id="toc-вступ" class="nav-link active" data-scroll-target="#вступ">Вступ</a></li>
+  <li><a href="#хід-роботи" id="toc-хід-роботи" class="nav-link" data-scroll-target="#хід-роботи">Хід роботи</a>
+  <ul class="collapse">
+  <li><a href="#підготовчий-етап" id="toc-підготовчий-етап" class="nav-link" data-scroll-target="#підготовчий-етап">Підготовчий етап</a></li>
+  <li><a href="#обчислення-змінних" id="toc-обчислення-змінних" class="nav-link" data-scroll-target="#обчислення-змінних">Обчислення змінних</a></li>
+  <li><a href="#вивчення-звязку" id="toc-вивчення-звязку" class="nav-link" data-scroll-target="#вивчення-звязку">Вивчення зв’язку</a></li>
+  <li><a href="#додаткові-предиктори" id="toc-додаткові-предиктори" class="nav-link" data-scroll-target="#додаткові-предиктори">Додаткові предиктори</a></li>
+  <li><a href="#нелінійний-звязок" id="toc-нелінійний-звязок" class="nav-link" data-scroll-target="#нелінійний-звязок">Нелінійний зв’язок</a></li>
+  <li><a href="#взаємодія-предикторів" id="toc-взаємодія-предикторів" class="nav-link" data-scroll-target="#взаємодія-предикторів">Взаємодія предикторів</a></li>
+  <li><a href="#кофірматорний-фа" id="toc-кофірматорний-фа" class="nav-link" data-scroll-target="#кофірматорний-фа">Кофірматорний ФА</a></li>
+  <li><a href="#результати" id="toc-результати" class="nav-link" data-scroll-target="#результати">Результати:</a></li>
+  </ul></li>
+  <li><a href="#висновки" id="toc-висновки" class="nav-link" data-scroll-target="#висновки">Висновки</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="report.docx"><i class="bi bi-file-word"></i>MS Word</a></li></ul></div></nav>
+</div>
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Дослідження взаємозвʼязку між шкільним благополуччям та тестовою/екзаменаційною тривогою</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Авторка</div>
+    <div class="quarto-title-meta-contents">
+             <p>Півень Ксенія Олександрівна </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Примітка
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Ксенії Олександрівні вдалося знайти дуже цікавий масив даних, на якому вона продемонструвала знання і навички, здобуті в процесі вивчення курсу «Дизайн психологічного дослідження з елементами математичної статистики». Я вирішив використати її звіт як приклад хорошої роботи, додавши свої коментарі</p>
+</div>
+</div>
+<section id="вступ" class="level2">
+<h2 class="anchored" data-anchor-id="вступ">Вступ</h2>
+<p>Електронний ресурс: Mendeley Data</p>
+<p>Дослідження: Test Anxiety, Wellbeing, Generalised Anxiety, Panic</p>
+<p>Ідентифікатор: DOI: 10.17632/9dcs5nvwtw.1</p>
+<p>Режим доступу: <a href="https://data.mendeley.com/datasets/9dcs5nvwtw" class="uri">https://data.mendeley.com/datasets/9dcs5nvwtw</a></p>
+<p>Гіпотеза: Існує негативна кореляція між рівнем благополуччя у школі та тривогою під час тестування у підлітків.</p>
+<p>У цьому дослідженні я використовувала набір даних “Test Anxiety, Wellbeing, Generalised Anxiety, Panic”, опублікований на ресурсі Mendeley Data, щоб дослідити зв’язок між тривогою під час тестування та благополуччям у школі у підлітків. Набір даних містить інформацію про 918 учасників віком від 13 до 19 років з 8 загальноосвітніх шкіл та коледжів у Англії та Уельсі. У дослідженні вимірювали три конструкти: тривога під час тестування, благополуччя у школі та генералізовану тривогу та паніку. Тривога під час тестування була виміряна за допомогою багатовимірної шкали тривоги під час тестування (Putwain et al., 2020), а благополуччя, пов’язане зі школою, було виміряно за допомогою шкали благополуччя у школі (Loderer et al., 2016). Додатково, загальна тривога та паніка були виміряні за допомогою підшкал зміненої шкали тривоги та депресії у дітей (Chorpita et al., 2005).</p>
+<p>Моя гіпотеза полягає у тому, що існує негативна кореляція між рівнем благополуччя у школі та тривогою під час тестування у підлітків. Для підтвердження чи спростування цієї гіпотези, я буду аналізувати дані, отримані за допомогою шкал тривоги під час тестування та благополуччя у школі.</p>
+<p>Багатовимірна шкала тестової тривожності (The Multidimensional Test Anxiety Scale - MTAS) була розроблена як інструмент для вимірювання тестової тривоги або екзаменаційної тривожності у популяції учнів середньої школи. У дослідженні респондентам були надані такі питання (<a href="#tbl-one" class="quarto-xref">Табл.&nbsp;1</a>):</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-one" class="anchored">
+<table class="table table-sm table-striped small">
+<caption>Таблиця&nbsp;1: The Multidimensional Test Anxiety Scale</caption>
+<colgroup>
+<col style="width: 4%">
+<col style="width: 47%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Пункт</th>
+<th style="text-align: left;">Англійською</th>
+<th style="text-align: left;">Українською</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">MTAS1</td>
+<td style="text-align: left;">Before a test/ exam, I am worried I will fail.</td>
+<td style="text-align: left;">Перед тесту/іспитом я хвилююсь, що не складу.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MTAS2</td>
+<td style="text-align: left;">I forget previously known material before taking a test/exam.</td>
+<td style="text-align: left;">Я забуваю раніше знайомий матеріал перед складанням тесту/іспиту.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MTAS3</td>
+<td style="text-align: left;">Even when I have prepared for a test/ exam I feel nervous about it.</td>
+<td style="text-align: left;">Навіть коли я готувався до тесту/іспиту, я нервую з цього приводу.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MTAS4</td>
+<td style="text-align: left;">Before I take a test/ exam my hand trembles.</td>
+<td style="text-align: left;">Перед тестом/іспитом у мене тремтить рука.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MTAS5</td>
+<td style="text-align: left;">During a test/ exam, I worry that I gave the wrong answers.</td>
+<td style="text-align: left;">Під час тесту/іспиту я переживаю, що дав неправильні відповіді.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MTAS6</td>
+<td style="text-align: left;">I forget facts I have learnt during tests/exams.</td>
+<td style="text-align: left;">Я забуваю факти, які дізнався під час тестів/іспитів.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MTAS7</td>
+<td style="text-align: left;">I feel tense before taking a test/exam.</td>
+<td style="text-align: left;">Я відчуваю напругу перед здачею тесту/іспиту.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MTAS8</td>
+<td style="text-align: left;">My heart races when I take a test/exam.</td>
+<td style="text-align: left;">Моє серце прискорюється, коли я складаю тест/іспит.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MTAS9</td>
+<td style="text-align: left;">After a test/exam, I am worried I have failed.</td>
+<td style="text-align: left;">Після тесту/іспиту я хвилююся, що не склав.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MTAS10</td>
+<td style="text-align: left;">During tests/exams, I forget things that I have learnt.</td>
+<td style="text-align: left;">Під час тестів/іспитів я забуваю речі, які вивчав.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MTAS11</td>
+<td style="text-align: left;">Just before I take a test/exam, I feel panicky.</td>
+<td style="text-align: left;">Безпосередньо перед складанням тесту/іспиту я відчуваю паніку.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MTAS12</td>
+<td style="text-align: left;">During a test/ exam I experience stomach discomfort.</td>
+<td style="text-align: left;">Під час тесту/іспиту я відчуваю дискомфорт у шлунку.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MTAS13</td>
+<td style="text-align: left;">During tests/ exams, I worry about the consequences of failing.</td>
+<td style="text-align: left;">Під час тестів/іспитів я переживаю про наслідки невдачі.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MTAS14</td>
+<td style="text-align: left;">During tests/exams, I find it hard to concentrate.</td>
+<td style="text-align: left;">Під час тестів/іспитів мені важко зосередитися.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">MTAS15</td>
+<td style="text-align: left;">Before a test/exam, I feel nervous.</td>
+<td style="text-align: left;">Перед тестом/іспитом я нервую.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">MTAS16</td>
+<td style="text-align: left;">During a test/ exam, my muscles are tight.</td>
+<td style="text-align: left;">Під час тесту/іспиту мої м’язи напружені.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Шкала благополуччя, пов’язаного зі школою (School-Related Wellbeing Scale), є інструментом, який використовується для вимірювання рівня благополуччя учнів у шкільному середовищі. Ця шкала спроектована для оцінки психологічного, емоційного та соціального добробуту учнів, а також їх задоволення шкільним життям. У дослідженні респондентам були надані такі питання (<a href="#tbl-two" class="quarto-xref">Табл.&nbsp;2</a>):</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="tbl-two" class="anchored">
+<table class="table table-sm table-striped small">
+<caption>Таблиця&nbsp;2: School-Related Wellbeing Scale</caption>
+<colgroup>
+<col style="width: 4%">
+<col style="width: 48%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Пункт</th>
+<th style="text-align: left;">Англійською</th>
+<th style="text-align: left;">Українською</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">WELL1</td>
+<td style="text-align: left;">School is going well for me.</td>
+<td style="text-align: left;">У мене все йде добре в школі.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WELL2</td>
+<td style="text-align: left;">I feel better at school then my classmates.</td>
+<td style="text-align: left;">У школі я почуваюся краще, ніж мої однокласники.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">WELL3</td>
+<td style="text-align: left;">I feel good at school.</td>
+<td style="text-align: left;">Мені добре в школі.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WELL4</td>
+<td style="text-align: left;">School allows me fulfil me needs.</td>
+<td style="text-align: left;">Школа дозволяє мені задовольняти потреби.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">WELL5</td>
+<td style="text-align: left;">I feel comfortable at school.</td>
+<td style="text-align: left;">Мені комфортно в школі.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">WELL6</td>
+<td style="text-align: left;">I like going to school.</td>
+<td style="text-align: left;">Мені подобається ходити до школи.</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">WELL7</td>
+<td style="text-align: left;">All in all, I am content with my day-to-day school experiences.</td>
+<td style="text-align: left;">В цілому, я задоволений своїм повсякденним шкільним досвідом.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</section>
+<section id="хід-роботи" class="level2">
+<h2 class="anchored" data-anchor-id="хід-роботи">Хід роботи</h2>
+<section id="підготовчий-етап" class="level3">
+<h3 class="anchored" data-anchor-id="підготовчий-етап">Підготовчий етап</h3>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Примітка
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Детальний покроковий опис виконаних дій насправді є необов’язковим і навіть шкодить роботі, оскільки потребує значно більше часу для створення звіту і відволікає від вирішення значно важливішої задачі – аналізу даних. Проте я лишив в прикладі цю частину, тому що вона може виявитися корисною для тих студентів, які мають обмежений досвід.</p>
+</div>
+</div>
+<p><strong>Крок 1.</strong> Початок роботи з R-Studio. Відкриваю хмарну версію R Studio <a href="https://posit.cloud/" class="uri">https://posit.cloud/</a>. Для роботи у хмарній версії має бути власний обліковий запис, який був створений мною на початку семестру. Заходжу у нього.</p>
+<p><strong>Крок 2.</strong> Створюю новий проєкт натискаючи відповідну кнопку (<a href="#fig-one" class="quarto-xref">Рис.&nbsp;1</a>).</p>
+<div id="fig-one" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="p1.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Рисунок&nbsp;1: Створення проєкту</figcaption>
+</figure>
+</div>
+<p><strong>Крок 3.</strong> У вкладці Files натискаю кнопку Upload для завантаження датасету, обираю файл на компʼютері, який має назву «Test Anxiety, Wellbeing, Generalised Anxiety and Panic.sav» (<a href="#fig-two" class="quarto-xref">Рис.&nbsp;2</a>).</p>
+<div id="fig-two" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="p2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Рисунок&nbsp;2: Завантаження датасету</figcaption>
+</figure>
+</div>
+<p><strong>Крок 4.</strong> Відкриваю додаткове вікно для введення тексту, майбутнього скрипту. Натискаю на вкладку File, де обираю New File -&gt; R Script <a href="#fig-3" class="quarto-xref">Рис.&nbsp;3</a>).</p>
+<div id="fig-3" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="p3.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Рисунок&nbsp;3: Створення вікна</figcaption>
+</figure>
+</div>
+<p><strong>Крок 5.</strong> Так як файл з датасетом в форматі *sav , потрібно завантажити пакет haven. Щоб завантажити пакет натискаю кнопку tools , обираю Instal packages (рис. 4), та у вікні прописую haven, натискаю instal . Підключаю його у вкладці Packages.</p>
+<div id="fig-4" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="p4.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Рисунок&nbsp;4: Завантаження пакетів</figcaption>
+</figure>
+</div>
+<p><strong>Крок 6.</strong> Далі у вкладці Environment натискаю Import Dataset, та обираю «From SPSS» (рис. 5). R Studio пропонує оновити пакет Rcpp, я погоджуюсь, щоб продовжити роботу. Відкривається потрібне мені вікно, обираю датасет та натискаю Import.</p>
+<div id="fig-5" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="p5.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Рисунок&nbsp;5: Імпортую датасет</figcaption>
+</figure>
+</div>
+<p><strong>Крок 7.</strong> Cтворюю собі новий датасет з таким самим набором даних, для того щоб його змінювати, додавати в нього нові змінні, даю йому назву mydataset.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(haven)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>mydataset <span class="ot">&lt;-</span> <span class="fu">read_spss</span>(</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Test Anxiety, Wellbeing, Generalised Anxiety and Panic.sav"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="обчислення-змінних" class="level3">
+<h3 class="anchored" data-anchor-id="обчислення-змінних">Обчислення змінних</h3>
+<p><strong>Крок 8.</strong> Далі я маю отримати середній бал відповідей (оцінку) кожної людини по шкалам які ми будемо досліджувати, а саме WELL і MTAS. Для цього за допомогою команди transform я формую дві нові змінні, які обчислюються шляхом сумування відповідних питань шкал MTAS і WELL. Так як у датасеті варіативність відповідей у шкалах від 1 до 5 , а мені потрібно від 0, то у формулі середнього арифметичного, після знаходження суми відповідей, потрібно відняти кількість питань і отримане значення поділити на кількість питань.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>mydataset <span class="ot">&lt;-</span> <span class="fu">transform</span>(</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  mydataset,</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">MTAS =</span> (MTAS1 <span class="sc">+</span> MTAS2 <span class="sc">+</span> MTAS3 <span class="sc">+</span> MTAS4 <span class="sc">+</span> MTAS5 <span class="sc">+</span> MTAS6 <span class="sc">+</span> MTAS7 <span class="sc">+</span> </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>          MTAS8 <span class="sc">+</span> MTAS9 <span class="sc">+</span> MTAS10 <span class="sc">+</span> MTAS11 <span class="sc">+</span> MTAS12 <span class="sc">+</span> MTAS13 <span class="sc">+</span> </span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>          MTAS14 <span class="sc">+</span> MTAS15 <span class="sc">+</span> MTAS16 <span class="sc">-</span> <span class="dv">16</span>) <span class="sc">/</span> <span class="dv">16</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">WELL =</span> (WELL1 <span class="sc">+</span> WELL2 <span class="sc">+</span> WELL3 <span class="sc">+</span> WELL4 <span class="sc">+</span> </span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>          WELL5 <span class="sc">+</span> WELL6 <span class="sc">+</span> WELL7 <span class="sc">-</span> <span class="dv">7</span>) <span class="sc">/</span> <span class="dv">7</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Крок 9.</strong> Для візуалізації попередньої дії, я зроблю гістограми розподілу по двом досліджуваним змінним (рис. 6). Це дозволить візуально оцінити розподіл оцінок для кожної шкали.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  mydataset<span class="sc">$</span>MTAS, </span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">col =</span> <span class="st">"blue"</span>, <span class="at">breaks =</span> <span class="dv">10</span>,</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"оцінка"</span>,</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"кількість опитаних"</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="report_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="672"></p>
+</div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>  mydataset<span class="sc">$</span>WELL, <span class="at">col =</span> <span class="st">"blue"</span>,</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">breaks =</span> <span class="dv">10</span>,</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">xlab =</span> <span class="st">"оцінка"</span>,</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>  <span class="at">ylab =</span> <span class="st">"кількість опитаних"</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="report_files/figure-html/unnamed-chunk-5-2.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+</section>
+<section id="вивчення-звязку" class="level3">
+<h3 class="anchored" data-anchor-id="вивчення-звязку">Вивчення зв’язку</h3>
+<p><strong>Крок 10.</strong> Тепер побудую діаграму розсіювання, де змінна MTAS представлена на осі Y, а змінна WELL - на осі X (рис. 7), щоб потім на ній зобразити лінію регресії.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  MTAS <span class="sc">~</span> WELL, <span class="at">data =</span> mydataset,</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">pch =</span> <span class="dv">16</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-7" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="report_files/figure-html/fig-7-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Рисунок&nbsp;6: Діаграма розсіювання</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Крок 11.</strong> Будую лінійну регресійну модель, щоб оцінити взаємозв’язок між оцінками MTAS і WELL та побачити наявність та тип кореляції між ними за допомогою функції lm.</p>
+<p><strong>Крок 12.</strong> Малюю лінію регресії для візуалізації створеної моделі за допомогою команди abline. Після реалізації цього кроку, на діаграмі розсіювання зʼявилась лінія, яка вказує на те, що зі зниженням показника WELL , показник MTAS підвищується (рис 8).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>model1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">formula =</span> MTAS <span class="sc">~</span> WELL, </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> mydataset</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>  MTAS <span class="sc">~</span> WELL, <span class="at">data =</span> mydataset,</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">pch =</span> <span class="dv">16</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(model1, <span class="at">lwd =</span> <span class="dv">2</span>, <span class="at">col =</span> <span class="st">"blue"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="report_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><strong>Крок 13.</strong> Вивожу інформацію регресійної моделі на консоль щоб побачити рівень кореляції та тип кореляції ( негативну/позитивну) , визначити чи результати побудованої моделі є статистично значущими та побачити відсоток дисперсії, яка може бути поясненою моделлю.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = MTAS ~ WELL, data = mydataset)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-3.08867 -0.39830  0.08379  0.51538  1.99443 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  3.08867    0.07998   38.62  &lt; 2e-16 ***
+WELL        -0.27078    0.03310   -8.18 9.43e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.7368 on 916 degrees of freedom
+Multiple R-squared:  0.06808,   Adjusted R-squared:  0.06706 
+F-statistic: 66.91 on 1 and 916 DF,  p-value: 9.427e-16</code></pre>
+</div>
+</div>
+<p><em>Висновок:</em> WELL негативно корелює з MTAS (-0.2708), тобто коли значення WELL зменшується на одиницю, очікується збільшення MTAS на 0.2708. Значення Pr(&gt;|t|) є дуже малим, це означає, що змінна WELL статистично значимо впливає на змінну MTAS, тобто існує статистично значуща залежність між благополуччям у школі та тестовою тривожністю. Значення Multiple R-squared означає що приблизно 6.8% відхилення людей в сукупності від середнього значення моя модель може пояснити.</p>
+</section>
+<section id="додаткові-предиктори" class="level3">
+<h3 class="anchored" data-anchor-id="додаткові-предиктори">Додаткові предиктори</h3>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Підказка
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Масив даних містить декілька соціально-демографічних змінних, які можуть виявитися корисними для пояснення тривоги: школа, стать, вік, етнічна належніть, право на безплатні сніданки (тобто, фінансовий стан сім’ї учня). Перед включенням змінної до моделі корисно дослідити розподіл її значень. Наприклад, подивимося на розподул за статтю:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sjmisc)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">frq</span>(mydataset, Gender)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>What is your gender? (Gender) &lt;numeric&gt; 
+# total N=918 valid N=918 mean=0.77 sd=0.44
+
+Value |             Label |   N | Raw % | Valid % | Cum. %
+----------------------------------------------------------
+    0 |              Male | 217 | 23.64 |   23.64 |  23.64
+    1 |            Female | 694 | 75.60 |   75.60 |  99.24
+    2 | Prefer not to say |   7 |  0.76 |    0.76 | 100.00
+ &lt;NA&gt; |              &lt;NA&gt; |   0 |  0.00 |    &lt;NA&gt; |   &lt;NA&gt;</code></pre>
+</div>
+</div>
+<p>Як можемо бачити, змінна <strong>Gender</strong> має додаткове значення 2, яке фактично вказує про відсутність даних. Отже, перед використанням цієї змінної в моделі потрібно її перекодувати, позбувшись тих семи учасників дослідження, які не надали відповіді на питання про стать.</p>
+</div>
+</div>
+<p><strong>Крок 14.</strong> Додатково розгляну вплив статі, щоб врахувати можливий вплив різниці у гендері на рівень тестової тривожності, оцінити чи є це статистично значущим предиктором, та покращити пояснювальну здатність моделі. Додаю до датасету додаткову змінну, яку називаю <em>Female</em>, тепер цей стовпчик відповідає на питання «Жінка?». Якщо значення 0, то ні (чоловік), якщо значення 1, то так (жінка).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(car)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Loading required package: carData</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>mydataset <span class="ot">&lt;-</span> <span class="fu">transform</span>(</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  mydataset,</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">Female =</span> <span class="fu">recode</span>(Gender, <span class="at">recodes =</span> <span class="st">"0 = 0; 1 = 1; 2 = NA"</span>)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Крок 15.</strong> Створюю нову модель впливу фактору гендеру на MTAS, яка має оцінити, як стать (жінка або чоловік) впливає на рівень тривожності. <strong>Крок 16.</strong> Вивожу статистичний опис model2 на консоль</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>model2 <span class="ot">&lt;-</span> <span class="fu">lm</span>(MTAS <span class="sc">~</span> Female, <span class="at">data =</span> mydataset)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = MTAS ~ Female, data = mydataset)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.60222 -0.44787  0.05213  0.52278  1.55213 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  2.01037    0.04895   41.07   &lt;2e-16 ***
+Female       0.59185    0.05608   10.55   &lt;2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.721 on 909 degrees of freedom
+  (7 observations deleted due to missingness)
+Multiple R-squared:  0.1092,    Adjusted R-squared:  0.1082 
+F-statistic: 111.4 on 1 and 909 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p><em>Висновок:</em> Отримані результати вказують на те, що середній рівень тестової тривожності для чоловіків (female = 0) становить 2.01594. А серед жінок (female = 1) очікуваний рівень тривожності вищий на 0.58280 порівняно з чоловіками. Тобто 2.01594 + 0.58280*1= 2.59874 - очікувана оцінка по шкалі MTAS для жінок. Тож, можна зробити висновок що для жінок очікується вищій рівень тестової тривожності, значення Pr(&gt;|t|) підтверджує високий рівень статистичної значущості, також модель може пояснити 11% дисперсії залежної змінної, що вказує на те що модель є середньою.</p>
+<p><strong>Крок 17.</strong> Будую складну модель, де зазначаю вплив WELL + Female на MTAS, щоб дослідити, як благополуччя у школі та стать впливають на рівень тривожності, а також можливу взаємодію між ними. <strong>Крок 18.</strong> Вивожу статистичний опис model3 на консоль</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>model3 <span class="ot">&lt;-</span> <span class="fu">lm</span>(MTAS <span class="sc">~</span> WELL <span class="sc">+</span> Female, <span class="at">data =</span> mydataset)</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model3)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = MTAS ~ WELL + Female, data = mydataset)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.96261 -0.39896  0.04706  0.49185  1.83129 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  2.60986    0.08874  29.409  &lt; 2e-16 ***
+WELL        -0.25260    0.03163  -7.987 4.18e-15 ***
+Female       0.56926    0.05431  10.481  &lt; 2e-16 ***
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.6974 on 908 degrees of freedom
+  (7 observations deleted due to missingness)
+Multiple R-squared:  0.1676,    Adjusted R-squared:  0.1658 
+F-statistic: 91.43 on 2 and 908 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p><em>Висновок:</em> Додавання предиктору Female збільшило відсоток дисперсії, яка може пояснити вплив WELL на MTAS до значення 16,9 %. При цьому коефіцієнт WELL не змінився значною мірою. Обидві змінні WELL та Female мають статистично значущий вплив на тривожність.</p>
+</section>
+<section id="нелінійний-звязок" class="level3">
+<h3 class="anchored" data-anchor-id="нелінійний-звязок">Нелінійний зв’язок</h3>
+<p><strong>Крок 19.</strong> Будую нову модель, для вивчення можливих нелінійних залежностей між незалежною змінною WELL і залежною змінною MTAS, в якій вказую кореляційний звʼязок MTAS та WELL^2, тобто квадратичний звʼязок. <strong>Крок 20.</strong> Виводжу інформацію про модель на консоль.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>model4 <span class="ot">&lt;-</span> <span class="fu">lm</span>(</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">formula =</span> MTAS <span class="sc">~</span> WELL <span class="sc">+</span> <span class="fu">I</span>(WELL <span class="sc">^</span> <span class="dv">2</span>) <span class="sc">+</span> <span class="fu">I</span>(WELL <span class="sc">^</span> <span class="dv">3</span>),</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> mydataset</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model4)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = MTAS ~ WELL + I(WELL^2) + I(WELL^3), data = mydataset)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-2.85370 -0.40531  0.08901  0.50578  1.85372 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  2.64204    0.20165  13.102   &lt;2e-16 ***
+WELL         0.55413    0.34370   1.612   0.1073    
+I(WELL^2)   -0.40991    0.17998  -2.278   0.0230 *  
+I(WELL^3)    0.06010    0.02883   2.084   0.0374 *  
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.7353 on 914 degrees of freedom
+Multiple R-squared:  0.07409,   Adjusted R-squared:  0.07105 
+F-statistic: 24.38 on 3 and 914 DF,  p-value: 3.51e-15</code></pre>
+</div>
+</div>
+<p>Результати побудованої моделі показують, що після додавання квадрату WELL статистична значущість впливу цього предиктору впала , квадрат WELL також не виявляє достатньої статистичної значущості. При цьому статистична значущість моделі в цілому залишається на високому рівні p-value: 4.438e-15. Відсоток дисперсії яку може пояснити модель майже не змінився, в порівнянні з model 1, і становить 7%. Таке падіння значущості впливу предиктору було зумовлено штучною мультиколінеарністю предикторів.</p>
+<p><strong>Крок 21.</strong> Щоб уникнути проблеми мультиколінеарності між предикторами, потрібно зменшити цю кореляцію, шляхом “відцентрування” цільового предиктора. Для відцентрування предиктора WELL використовуємо обчислення за допомогою команди transform. Спочатку роблю змінну WELL_cent = WELL - середній.бал(WELL), а потім роблю ще одну змінну WELL_cent2, де підношу WELL_cent до квадрату</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>mydataset <span class="ot">&lt;-</span> <span class="fu">transform</span>(</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>  mydataset,</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">WELL_cent =</span> WELL <span class="sc">-</span> <span class="fu">mean</span>(WELL)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>mydataset <span class="ot">&lt;-</span> <span class="fu">transform</span>(</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>  mydataset,</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">WELL_cent2 =</span> WELL_cent <span class="sc">^</span> <span class="dv">2</span></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Крок 22.</strong> Ще раз будую нову модель model4_1, для вивчення можливих нелінійних залежностей між незалежною змінною WELL і залежною змінною MTAS, використовуючи центрований предиктор. <strong>Крок 23.</strong> Виводжу на консоль інформацію про нову model4_1.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>model4_1 <span class="ot">&lt;-</span> <span class="fu">lm</span>(</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">formula =</span> MTAS <span class="sc">~</span> WELL_cent <span class="sc">+</span> WELL_cent2,</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> mydataset</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model4_1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = MTAS ~ WELL_cent + WELL_cent2, data = mydataset)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.9404 -0.4077  0.0770  0.5075  2.1247 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  2.48751    0.02998  82.983  &lt; 2e-16 ***
+WELL_cent   -0.29096    0.03677  -7.914  7.2e-15 ***
+WELL_cent2  -0.04093    0.03249  -1.260    0.208    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.7366 on 915 degrees of freedom
+Multiple R-squared:  0.06969,   Adjusted R-squared:  0.06766 
+F-statistic: 34.27 on 2 and 915 DF,  p-value: 4.438e-15</code></pre>
+</div>
+</div>
+<p><em>Висновок:</em> центрування предиктора WELL дозволило знайти статистично значущий зв’язок між WELL_cent і MTAS, але WELL_cent2 не показав статистично значущих результатів. Тобто немає достовірного доказу нелінійного компонента в залежності між рівнем благополуччя та тривожністю, але є статистично незначуща тенденція.</p>
+</section>
+<section id="взаємодія-предикторів" class="level3">
+<h3 class="anchored" data-anchor-id="взаємодія-предикторів">Взаємодія предикторів</h3>
+<p><strong>Крок 24.</strong> Розгляну взаємодію (статистичну інтеракцію) двох предикторів (WELL та Gender) у їхньому взаємному впливі на залежну змінну. Ціль цього процесу є більш детальне дослідження взаємодії двох предикторів, та їх вплив на залежну змінну.</p>
+<p>Для цього спочатку перетворюю кількісну змінну Gender на фактор Гендер.</p>
+<p><strong>Крок 25.</strong> Будую модель, в якій вказую вплив WELL та Gender та їхню інтеракцію на MTAS, та вивожу результат.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>model5 <span class="ot">&lt;-</span> <span class="fu">lm</span>(</span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>  MTAS <span class="sc">~</span> WELL <span class="sc">*</span> Female,</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">data =</span> mydataset</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(model5)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Call:
+lm(formula = MTAS ~ WELL * Female, data = mydataset)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.9575 -0.3970  0.0492  0.4922  1.8252 
+
+Coefficients:
+            Estimate Std. Error t value Pr(&gt;|t|)    
+(Intercept)  2.64334    0.17355  15.231  &lt; 2e-16 ***
+WELL        -0.26671    0.07035  -3.791  0.00016 ***
+Female       0.52761    0.19331   2.729  0.00647 ** 
+WELL:Female  0.01769    0.07877   0.225  0.82241    
+---
+Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+Residual standard error: 0.6977 on 907 degrees of freedom
+  (7 observations deleted due to missingness)
+Multiple R-squared:  0.1677,    Adjusted R-squared:  0.1649 
+F-statistic: 60.91 on 3 and 907 DF,  p-value: &lt; 2.2e-16</code></pre>
+</div>
+</div>
+<p><em>Висновок:</em> В отриманих результатах можна побачити, що предиктор WELL має статистично значущий вплив і показує негативну кореляцію з залежною змінною MTAS . Розглядаючи значення Гендер1 (чоловік) та Гендер 2 ( жінка), можна побачити, що більшу позитивну кореляцію показує жіноча стать, але цей предиктор не має достатньої статистичної значущості, на відміну від Гендер 1 який має статистичну значущість 0.006382 **. На жаль, у даній моделі статистично значущої інтеракції між предикторами не було виявлено.</p>
+</section>
+<section id="кофірматорний-фа" class="level3">
+<h3 class="anchored" data-anchor-id="кофірматорний-фа">Кофірматорний ФА</h3>
+<p><strong>Крок 27.</strong> Початок конфірматорного аналізу для двох конструктів WELL та MTAS. Це допоможе дізнатись про якість проведення дослідження та можливі коварації між змінними(питаннями) в конструкті. Для початку роботи завантажую та підключаю пакет lavaan через кнопку tools.</p>
+<p><strong>Крок 28.</strong> Створюю структурну модель WELL. В структурній моделі зазначаю фактор та змінні якими він пояснюється.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>model6f <span class="ot">&lt;-</span> <span class="st">"factorWELL =~ WELL1 + WELL2 + WELL3 + WELL4 + WELL5 + WELL6 + WELL7"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Крок 29.</strong> Провожу конфірматорний факторний аналіз для цієї структурної моделі. <strong>Крок 30.</strong> Вивожу головні результати моделі на консоль. При цьому розширяю виведену інформацію включивши в неї fit.measures = TRUE - додасть оцінки якості моделі, rsq = TRUE - значення Rквадрат.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lavaan)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>This is lavaan 0.6-15
+lavaan is FREE software! Please report any bugs.</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>fitWELL <span class="ot">&lt;-</span> <span class="fu">cfa</span>(</span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>  <span class="at">model =</span> model6f, <span class="at">data =</span> mydataset,</span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">estimator =</span> <span class="st">"ML"</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>  fitWELL, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">rsq =</span> <span class="cn">TRUE</span></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>lavaan 0.6.15 ended normally after 24 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        14
+
+  Number of observations                           918
+
+Model Test User Model:
+                                                      
+  Test statistic                               156.189
+  Degrees of freedom                                14
+  P-value (Chi-square)                           0.000
+
+Model Test Baseline Model:
+
+  Test statistic                              3139.777
+  Degrees of freedom                                21
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.954
+  Tucker-Lewis Index (TLI)                       0.932
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)              -7323.420
+  Loglikelihood unrestricted model (H1)             NA
+                                                      
+  Akaike (AIC)                               14674.840
+  Bayesian (BIC)                             14742.350
+  Sample-size adjusted Bayesian (SABIC)      14697.888
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.105
+  90 Percent confidence interval - lower         0.091
+  90 Percent confidence interval - upper         0.120
+  P-value H_0: RMSEA &lt;= 0.050                    0.000
+  P-value H_0: RMSEA &gt;= 0.080                    0.998
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.043
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model          Structured
+
+Latent Variables:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)
+  factorWELL =~                                       
+    WELL1             1.000                           
+    WELL2             0.784    0.050   15.745    0.000
+    WELL3             1.322    0.056   23.752    0.000
+    WELL4             0.878    0.047   18.500    0.000
+    WELL5             1.076    0.051   21.107    0.000
+    WELL6             1.275    0.063   20.157    0.000
+    WELL7             1.078    0.049   21.828    0.000
+
+Variances:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)
+   .WELL1             0.460    0.024   19.265    0.000
+   .WELL2             0.585    0.029   20.389    0.000
+   .WELL3             0.239    0.017   14.078    0.000
+   .WELL4             0.429    0.022   19.642    0.000
+   .WELL5             0.363    0.020   18.229    0.000
+   .WELL6             0.636    0.034   18.877    0.000
+   .WELL7             0.303    0.017   17.562    0.000
+    factorWELL        0.428    0.037   11.578    0.000
+
+R-Square:
+                   Estimate
+    WELL1             0.482
+    WELL2             0.310
+    WELL3             0.758
+    WELL4             0.435
+    WELL5             0.577
+    WELL6             0.522
+    WELL7             0.621</code></pre>
+</div>
+</div>
+<p><em>Висновки:</em> Для оцінки якості моделі буду використовувати показники: P-value (Chi-square) 0.000, Comparative Fit Index (CFI) 0.954, Tucker-Lewis Index (TLI) 0.932, RMSEA 0.105. Показник P-value (Chi-square) вказує те, наскільки модель відтворює вимірювані дані, у моєму випадку значення нижче 0.1% що вказує на те що модель поганої якості. CFI і TLI показники за загальноприйнятою мірою мають бути вищими за 0,95. У моєму випадку CFI є вищим за 0.95, а TLI майже наблизився до цільового значення. Це вказує на те, що все ж таки якість моделі не зовсім погана. Показник RMSEA має бути менше ніж 0.05 і по цьому параметру наша модель є також поганою.</p>
+<p><strong>Крок 31.</strong> Спробую покращити модель включивши в неї значущі коваріації. Спочатку знайду значущі коваріації за допомогою команди modindices(fitWELL).</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">modindices</span>(fitWELL, <span class="at">sort. =</span> <span class="cn">TRUE</span>, <span class="at">minimum.value =</span> <span class="dv">50</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>     lhs op   rhs    mi   epc sepc.lv sepc.all sepc.nox
+16 WELL1 ~~ WELL2 64.91 0.151   0.151     0.29     0.29</code></pre>
+</div>
+</div>
+<p><em>Висновок:</em> Для підвищення якості моделі можемо включити коваріації з найбільшим показником mi: WELL1 ~~ WELL2; WELL1 ~~ WELL6; WELL3 ~~ WELL7; WELL2 ~~ WELL4; WELL2 ~~ WELL6.</p>
+<p><strong>Крок 32.</strong> Роблю нову модель з доданими обраними ковараціями до минулої структурної моделі. Крок 33. Проводжу конфірматорний аналіз для нової структурної моделі з коваріаціями. Крок 34. Виводжу головні результати моделі на консоль</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>model6fков <span class="ot">&lt;-</span></span>
+<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a><span class="st">"factorWELL =~ WELL1 + WELL2 + WELL3 + WELL4 + WELL5 + WELL6 + WELL7</span></span>
+<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a><span class="st">WELL1 ~~ WELL2</span></span>
+<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="st">WELL1 ~~ WELL6</span></span>
+<span id="cb32-5"><a href="#cb32-5" aria-hidden="true" tabindex="-1"></a><span class="st">WELL3 ~~ WELL7</span></span>
+<span id="cb32-6"><a href="#cb32-6" aria-hidden="true" tabindex="-1"></a><span class="st">WELL2 ~~ WELL4</span></span>
+<span id="cb32-7"><a href="#cb32-7" aria-hidden="true" tabindex="-1"></a><span class="st">WELL2 ~~ WELL6"</span></span>
+<span id="cb32-8"><a href="#cb32-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-9"><a href="#cb32-9" aria-hidden="true" tabindex="-1"></a>fitWELLков <span class="ot">&lt;-</span> <span class="fu">cfa</span>(</span>
+<span id="cb32-10"><a href="#cb32-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">model =</span> model6fков, <span class="at">data =</span> mydataset,</span>
+<span id="cb32-11"><a href="#cb32-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">estimator =</span> <span class="st">"ML"</span></span>
+<span id="cb32-12"><a href="#cb32-12" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb32-13"><a href="#cb32-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb32-14"><a href="#cb32-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(</span>
+<span id="cb32-15"><a href="#cb32-15" aria-hidden="true" tabindex="-1"></a>  fitWELLков, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb32-16"><a href="#cb32-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">rsq =</span> <span class="cn">TRUE</span></span>
+<span id="cb32-17"><a href="#cb32-17" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>lavaan 0.6.15 ended normally after 28 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        19
+
+  Number of observations                           918
+
+Model Test User Model:
+                                                      
+  Test statistic                                27.261
+  Degrees of freedom                                 9
+  P-value (Chi-square)                           0.001
+
+Model Test Baseline Model:
+
+  Test statistic                              3139.777
+  Degrees of freedom                                21
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.994
+  Tucker-Lewis Index (TLI)                       0.986
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)              -7258.956
+  Loglikelihood unrestricted model (H1)             NA
+                                                      
+  Akaike (AIC)                               14555.912
+  Bayesian (BIC)                             14647.534
+  Sample-size adjusted Bayesian (SABIC)      14587.192
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.047
+  90 Percent confidence interval - lower         0.027
+  90 Percent confidence interval - upper         0.068
+  P-value H_0: RMSEA &lt;= 0.050                    0.559
+  P-value H_0: RMSEA &gt;= 0.080                    0.003
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.017
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model          Structured
+
+Latent Variables:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)
+  factorWELL =~                                       
+    WELL1             1.000                           
+    WELL2             0.782    0.044   17.803    0.000
+    WELL3             1.369    0.059   23.109    0.000
+    WELL4             0.881    0.048   18.409    0.000
+    WELL5             1.073    0.051   20.855    0.000
+    WELL6             1.309    0.069   19.099    0.000
+    WELL7             1.135    0.053   21.458    0.000
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)
+ .WELL1 ~~                                            
+   .WELL2             0.133    0.020    6.676    0.000
+   .WELL6            -0.085    0.021   -4.127    0.000
+ .WELL3 ~~                                            
+   .WELL7            -0.069    0.014   -5.001    0.000
+ .WELL2 ~~                                            
+   .WELL4            -0.046    0.017   -2.676    0.007
+   .WELL6            -0.075    0.022   -3.355    0.001
+
+Variances:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)
+   .WELL1             0.470    0.024   19.343    0.000
+   .WELL2             0.591    0.029   20.353    0.000
+   .WELL3             0.203    0.019   10.946    0.000
+   .WELL4             0.435    0.022   20.026    0.000
+   .WELL5             0.378    0.020   18.982    0.000
+   .WELL6             0.615    0.033   18.650    0.000
+   .WELL7             0.262    0.018   14.446    0.000
+    factorWELL        0.418    0.037   11.388    0.000
+
+R-Square:
+                   Estimate
+    WELL1             0.470
+    WELL2             0.302
+    WELL3             0.794
+    WELL4             0.427
+    WELL5             0.560
+    WELL6             0.538
+    WELL7             0.672</code></pre>
+</div>
+</div>
+<p><em>Висновки:</em> Можна побачити що, показники якості моделі збільшились і тепер P-value (Chi-square) = 0.001, що вказує на те, що модель може відтворити 0.1% спостережуваних змінних, що залишається не дуже гарним результатом. Але показники CFI = 0.994, та TLI = 0.986 піднялися та перевищують 0.95, це вказує на гарний результат покращення моделі. RMSEA = 0.047 також нижче за цільове значення. Отже, можна вважати, що модель добре підігнана до спостережуваних змінних.</p>
+<p><strong>Крок 35.</strong> Конфірматорний аналіз для конструкта MTAS. Всі кроки описані вище будуть повторені для конструкта MTAS, і будуть описані основні дані з результатів.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>model6fмтас <span class="ot">&lt;-</span> <span class="st">"factorMTAS =~ MTAS1 + MTAS2 + MTAS3 + MTAS4 + MTAS5 + MTAS6 +</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="st">MTAS7 + MTAS8 + MTAS9 + MTAS10 + MTAS11 + MTAS12 + MTAS13 + MTAS14 + MTAS15 +</span></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="st">MTAS16"</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>fitMTAS <span class="ot">&lt;-</span> <span class="fu">cfa</span>(</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a>  <span class="at">model =</span> model6fмтас, <span class="at">data =</span> mydataset,</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a>  <span class="at">estimator =</span> <span class="st">"ML"</span></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(</span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a>  fitMTAS, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a>  <span class="at">rsq =</span> <span class="cn">TRUE</span></span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>lavaan 0.6.15 ended normally after 26 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        32
+
+  Number of observations                           918
+
+Model Test User Model:
+                                                      
+  Test statistic                              1759.369
+  Degrees of freedom                               104
+  P-value (Chi-square)                           0.000
+
+Model Test Baseline Model:
+
+  Test statistic                              8582.854
+  Degrees of freedom                               120
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.804
+  Tucker-Lewis Index (TLI)                       0.774
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)             -18722.900
+  Loglikelihood unrestricted model (H1)             NA
+                                                      
+  Akaike (AIC)                               37509.801
+  Bayesian (BIC)                             37664.111
+  Sample-size adjusted Bayesian (SABIC)      37562.483
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.132
+  90 Percent confidence interval - lower         0.126
+  90 Percent confidence interval - upper         0.137
+  P-value H_0: RMSEA &lt;= 0.050                    0.000
+  P-value H_0: RMSEA &gt;= 0.080                    1.000
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.084
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model          Structured
+
+Latent Variables:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)
+  factorMTAS =~                                       
+    MTAS1             1.000                           
+    MTAS2             0.623    0.046   13.460    0.000
+    MTAS3             0.992    0.045   22.122    0.000
+    MTAS4             1.184    0.059   20.237    0.000
+    MTAS5             0.956    0.045   21.268    0.000
+    MTAS6             0.754    0.047   16.094    0.000
+    MTAS7             1.140    0.050   22.714    0.000
+    MTAS8             1.305    0.056   23.211    0.000
+    MTAS9             1.111    0.049   22.905    0.000
+    MTAS10            0.739    0.048   15.506    0.000
+    MTAS11            1.347    0.053   25.183    0.000
+    MTAS12            1.167    0.060   19.527    0.000
+    MTAS13            1.076    0.055   19.619    0.000
+    MTAS14            0.834    0.061   13.688    0.000
+    MTAS15            1.080    0.046   23.445    0.000
+    MTAS16            1.045    0.054   19.372    0.000
+
+Variances:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)
+   .MTAS1             0.447    0.023   19.827    0.000
+   .MTAS2             0.764    0.036   21.062    0.000
+   .MTAS3             0.434    0.022   19.803    0.000
+   .MTAS4             0.864    0.043   20.265    0.000
+   .MTAS5             0.470    0.023   20.036    0.000
+   .MTAS6             0.705    0.034   20.849    0.000
+   .MTAS7             0.513    0.026   19.612    0.000
+   .MTAS8             0.609    0.031   19.428    0.000
+   .MTAS9             0.469    0.024   19.544    0.000
+   .MTAS10            0.748    0.036   20.904    0.000
+   .MTAS11            0.426    0.023   18.377    0.000
+   .MTAS12            0.946    0.046   20.398    0.000
+   .MTAS13            0.792    0.039   20.382    0.000
+   .MTAS14            1.313    0.062   21.047    0.000
+   .MTAS15            0.398    0.021   19.333    0.000
+   .MTAS16            0.779    0.038   20.425    0.000
+    factorMTAS        0.509    0.040   12.615    0.000
+
+R-Square:
+                   Estimate
+    MTAS1             0.533
+    MTAS2             0.206
+    MTAS3             0.536
+    MTAS4             0.453
+    MTAS5             0.498
+    MTAS6             0.291
+    MTAS7             0.564
+    MTAS8             0.587
+    MTAS9             0.573
+    MTAS10            0.271
+    MTAS11            0.684
+    MTAS12            0.423
+    MTAS13            0.427
+    MTAS14            0.213
+    MTAS15            0.598
+    MTAS16            0.417</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">modindices</span>(</span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>  fitMTAS, <span class="at">sort. =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>  <span class="at">minimum.value =</span> <span class="dv">50</span></span>
+<span id="cb36-4"><a href="#cb36-4" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       lhs op    rhs      mi   epc sepc.lv sepc.all sepc.nox
+102  MTAS6 ~~ MTAS10 415.824 0.502   0.502    0.691    0.691
+56   MTAS2 ~~ MTAS10 245.635 0.400   0.400    0.529    0.529
+52   MTAS2 ~~  MTAS6 230.451 0.376   0.376    0.513    0.513
+147 MTAS12 ~~ MTAS16  88.669 0.281   0.281    0.327    0.327
+41   MTAS1 ~~  MTAS9  79.507 0.148   0.148    0.324    0.324
+116  MTAS7 ~~ MTAS15  70.391 0.140   0.140    0.309    0.309
+79   MTAS4 ~~  MTAS8  52.472 0.189   0.189    0.261    0.261
+136 MTAS10 ~~ MTAS14  50.892 0.239   0.239    0.241    0.241</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>model6fмтаск <span class="ot">&lt;-</span></span>
+<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a><span class="st">"factorMTAS =~ MTAS1 + MTAS2 + MTAS3 + MTAS4 + MTAS5 + MTAS6 + MTAS7 +</span></span>
+<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a><span class="st">MTAS8 + MTAS9 + MTAS10 + MTAS11 + MTAS12 + MTAS13 + MTAS14 + MTAS15 +</span></span>
+<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a><span class="st">MTAS16</span></span>
+<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a><span class="st">MTAS2 ~~ MTAS6; MTAS2 ~~ MTAS10; MTAS6 ~~ MTAS10; </span></span>
+<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a><span class="st">MTAS12 ~~ MTAS16; MTAS7 ~~ MTAS15; MTAS1 ~~ MTAS9"</span></span>
+<span id="cb38-8"><a href="#cb38-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-9"><a href="#cb38-9" aria-hidden="true" tabindex="-1"></a>fitMTASков <span class="ot">&lt;-</span> <span class="fu">cfa</span>(</span>
+<span id="cb38-10"><a href="#cb38-10" aria-hidden="true" tabindex="-1"></a>  <span class="at">model =</span> model6fмтаск, <span class="at">data =</span> mydataset,</span>
+<span id="cb38-11"><a href="#cb38-11" aria-hidden="true" tabindex="-1"></a>  <span class="at">estimator =</span> <span class="st">"ML"</span></span>
+<span id="cb38-12"><a href="#cb38-12" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb38-13"><a href="#cb38-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb38-14"><a href="#cb38-14" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(fitMTASков, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>, <span class="at">rsq =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>lavaan 0.6.15 ended normally after 33 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        38
+
+  Number of observations                           918
+
+Model Test User Model:
+                                                      
+  Test statistic                               658.371
+  Degrees of freedom                                98
+  P-value (Chi-square)                           0.000
+
+Model Test Baseline Model:
+
+  Test statistic                              8582.854
+  Degrees of freedom                               120
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.934
+  Tucker-Lewis Index (TLI)                       0.919
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)             -18172.401
+  Loglikelihood unrestricted model (H1)             NA
+                                                      
+  Akaike (AIC)                               36420.803
+  Bayesian (BIC)                             36604.046
+  Sample-size adjusted Bayesian (SABIC)      36483.363
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.079
+  90 Percent confidence interval - lower         0.073
+  90 Percent confidence interval - upper         0.085
+  P-value H_0: RMSEA &lt;= 0.050                    0.000
+  P-value H_0: RMSEA &gt;= 0.080                    0.386
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.054
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model          Structured
+
+Latent Variables:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)
+  factorMTAS =~                                       
+    MTAS1             1.000                           
+    MTAS2             0.584    0.048   12.065    0.000
+    MTAS3             1.025    0.048   21.420    0.000
+    MTAS4             1.225    0.062   19.721    0.000
+    MTAS5             0.973    0.048   20.322    0.000
+    MTAS6             0.718    0.049   14.591    0.000
+    MTAS7             1.174    0.054   21.835    0.000
+    MTAS8             1.362    0.060   22.630    0.000
+    MTAS9             1.118    0.043   25.980    0.000
+    MTAS10            0.699    0.050   13.970    0.000
+    MTAS11            1.404    0.058   24.347    0.000
+    MTAS12            1.191    0.063   18.802    0.000
+    MTAS13            1.106    0.058   19.024    0.000
+    MTAS14            0.832    0.064   13.057    0.000
+    MTAS15            1.110    0.049   22.468    0.000
+    MTAS16            1.068    0.057   18.683    0.000
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)
+ .MTAS2 ~~                                            
+   .MTAS6             0.397    0.029   13.518    0.000
+   .MTAS10            0.421    0.030   13.859    0.000
+ .MTAS6 ~~                                            
+   .MTAS10            0.518    0.031   16.470    0.000
+ .MTAS12 ~~                                           
+   .MTAS16            0.261    0.032    8.167    0.000
+ .MTAS7 ~~                                            
+   .MTAS15            0.111    0.018    6.266    0.000
+ .MTAS1 ~~                                            
+   .MTAS9             0.150    0.019    7.987    0.000
+
+Variances:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)
+   .MTAS1             0.474    0.024   19.689    0.000
+   .MTAS2             0.798    0.038   21.087    0.000
+   .MTAS3             0.429    0.022   19.509    0.000
+   .MTAS4             0.855    0.043   20.056    0.000
+   .MTAS5             0.480    0.024   19.888    0.000
+   .MTAS6             0.746    0.036   20.884    0.000
+   .MTAS7             0.510    0.027   19.153    0.000
+   .MTAS8             0.582    0.031   18.933    0.000
+   .MTAS9             0.496    0.026   19.379    0.000
+   .MTAS10            0.791    0.038   20.941    0.000
+   .MTAS11            0.401    0.023   17.567    0.000
+   .MTAS12            0.956    0.047   20.235    0.000
+   .MTAS13            0.793    0.039   20.223    0.000
+   .MTAS14            1.334    0.063   21.021    0.000
+   .MTAS15            0.398    0.021   18.858    0.000
+   .MTAS16            0.786    0.039   20.259    0.000
+    factorMTAS        0.482    0.040   12.077    0.000
+
+R-Square:
+                   Estimate
+    MTAS1             0.504
+    MTAS2             0.171
+    MTAS3             0.542
+    MTAS4             0.458
+    MTAS5             0.487
+    MTAS6             0.250
+    MTAS7             0.566
+    MTAS8             0.606
+    MTAS9             0.549
+    MTAS10            0.229
+    MTAS11            0.703
+    MTAS12            0.417
+    MTAS13            0.426
+    MTAS14            0.200
+    MTAS15            0.599
+    MTAS16            0.412</code></pre>
+</div>
+</div>
+</section>
+<section id="результати" class="level3">
+<h3 class="anchored" data-anchor-id="результати">Результати:</h3>
+<p>Значення до покращення</p>
+<pre><code>P-value (Chi-square)          0.000
+Comparative Fit Index (CFI)   0.804
+Tucker-Lewis Index (TLI)      0.774
+RMSEA                         0.132</code></pre>
+<p>Обрані коварації</p>
+<pre><code>MTAS2 ~~ MTAS6;
+MTAS2 ~~ MTAS10;
+MTAS6 ~~ MTAS10;
+MTAS12 ~~ MTAS16;
+MTAS7 ~~ MTAS15;
+MTAS1 ~~ MTAS9</code></pre>
+<p>Значення після покращення</p>
+<pre><code>P-value (Chi-square)          0.000
+Comparative Fit Index (CFI)   0.934
+Tucker-Lewis Index (TLI)      0.919
+RMSEA                         0.079</code></pre>
+<p><em>Висновки:</em> Результати покращення дійсно змогли підвищити показники в CFI та TLI, та знизили RMSEA, але цільових показників так і не було досягнуто. Це може вказувати на порушення при зборі даних або загалом в логіці конструкту тестової тривожності.</p>
+<p><strong>Крок 36.</strong> Побудова моделі методом структурних рівнянь. Спочатку створюю структурну модель MTAS ~WELL. В цій зазначаю структуру для фактору MTAS та структуру для фактору WELL, з отриманими з конфірматорного аналізу коваріаціями.</p>
+<p><strong>Крок 37.</strong> Проводжу побудову моделі MTAS ~WELL за допомогою функції побудови структурних рівнянь з пакету lavaan.</p>
+<p><strong>Крок 38.</strong> Виводжу головні результати моделі на консоль, включивши в них fit.measures = TRUE - додасть оцінки якості моделі, rsq = TRUE - значення R квадрат та standardized = TRUE що покаже стандартизовані значення кореляції між MTAS та WELL</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>model7 <span class="ot">&lt;-</span> <span class="st">"</span></span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a><span class="st">MTAS_CFA =~ MTAS1 + MTAS2 + MTAS3 + MTAS4 + MTAS5 + MTAS6 + MTAS7 + MTAS8 +</span></span>
+<span id="cb43-3"><a href="#cb43-3" aria-hidden="true" tabindex="-1"></a><span class="st">MTAS9 + MTAS10 + MTAS11 + MTAS12 + MTAS13 + MTAS14 + MTAS15 + MTAS16</span></span>
+<span id="cb43-4"><a href="#cb43-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-5"><a href="#cb43-5" aria-hidden="true" tabindex="-1"></a><span class="st">MTAS2 ~~ MTAS6; MTAS2 ~~ MTAS10; MTAS6 ~~ MTAS10; MTAS12 ~~ MTAS16;</span></span>
+<span id="cb43-6"><a href="#cb43-6" aria-hidden="true" tabindex="-1"></a><span class="st">MTAS7 ~~ MTAS15; MTAS1 ~~ MTAS9</span></span>
+<span id="cb43-7"><a href="#cb43-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-8"><a href="#cb43-8" aria-hidden="true" tabindex="-1"></a><span class="st">WELL_CFA =~ WELL1 + WELL2 + WELL3 + WELL4 + WELL5 + WELL6 + WELL7</span></span>
+<span id="cb43-9"><a href="#cb43-9" aria-hidden="true" tabindex="-1"></a><span class="st">WELL1 ~~ WELL2; WELL1 ~~ WELL6; WELL3 ~~ WELL7; WELL2 ~~ WELL4; </span></span>
+<span id="cb43-10"><a href="#cb43-10" aria-hidden="true" tabindex="-1"></a><span class="st">WELL2 ~~ WELL6</span></span>
+<span id="cb43-11"><a href="#cb43-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-12"><a href="#cb43-12" aria-hidden="true" tabindex="-1"></a><span class="st">MTAS_CFA ~ WELL_CFA"</span></span>
+<span id="cb43-13"><a href="#cb43-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-14"><a href="#cb43-14" aria-hidden="true" tabindex="-1"></a>model7fit <span class="ot">&lt;-</span> <span class="fu">cfa</span>(</span>
+<span id="cb43-15"><a href="#cb43-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">model =</span> model7, <span class="at">data =</span> mydataset,</span>
+<span id="cb43-16"><a href="#cb43-16" aria-hidden="true" tabindex="-1"></a>  <span class="at">meanstructure =</span> <span class="cn">TRUE</span></span>
+<span id="cb43-17"><a href="#cb43-17" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb43-18"><a href="#cb43-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb43-19"><a href="#cb43-19" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(</span>
+<span id="cb43-20"><a href="#cb43-20" aria-hidden="true" tabindex="-1"></a>  model7fit, <span class="at">fit.measures =</span> <span class="cn">TRUE</span>, <span class="at">standardized =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb43-21"><a href="#cb43-21" aria-hidden="true" tabindex="-1"></a>  <span class="at">rsq =</span> <span class="cn">TRUE</span></span>
+<span id="cb43-22"><a href="#cb43-22" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>lavaan 0.6.15 ended normally after 44 iterations
+
+  Estimator                                         ML
+  Optimization method                           NLMINB
+  Number of model parameters                        81
+
+  Number of observations                           918
+
+Model Test User Model:
+                                                      
+  Test statistic                              1009.985
+  Degrees of freedom                               218
+  P-value (Chi-square)                           0.000
+
+Model Test Baseline Model:
+
+  Test statistic                             12092.447
+  Degrees of freedom                               253
+  P-value                                        0.000
+
+User Model versus Baseline Model:
+
+  Comparative Fit Index (CFI)                    0.933
+  Tucker-Lewis Index (TLI)                       0.922
+
+Loglikelihood and Information Criteria:
+
+  Loglikelihood user model (H0)             -25408.626
+  Loglikelihood unrestricted model (H1)             NA
+                                                      
+  Akaike (AIC)                               50979.252
+  Bayesian (BIC)                             51369.850
+  Sample-size adjusted Bayesian (SABIC)      51112.604
+
+Root Mean Square Error of Approximation:
+
+  RMSEA                                          0.063
+  90 Percent confidence interval - lower         0.059
+  90 Percent confidence interval - upper         0.067
+  P-value H_0: RMSEA &lt;= 0.050                    0.000
+  P-value H_0: RMSEA &gt;= 0.080                    0.000
+
+Standardized Root Mean Square Residual:
+
+  SRMR                                           0.067
+
+Parameter Estimates:
+
+  Standard errors                             Standard
+  Information                                 Expected
+  Information saturated (h1) model          Structured
+
+Latent Variables:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+  MTAS_CFA =~                                                           
+    MTAS1             1.000                               0.694    0.709
+    MTAS2             0.589    0.048   12.157    0.000    0.409    0.417
+    MTAS3             1.023    0.048   21.345    0.000    0.710    0.734
+    MTAS4             1.229    0.062   19.748    0.000    0.852    0.679
+    MTAS5             0.973    0.048   20.306    0.000    0.675    0.698
+    MTAS6             0.723    0.049   14.664    0.000    0.502    0.503
+    MTAS7             1.172    0.054   21.767    0.000    0.813    0.750
+    MTAS8             1.363    0.060   22.610    0.000    0.946    0.778
+    MTAS9             1.119    0.043   25.974    0.000    0.777    0.741
+    MTAS10            0.704    0.050   14.049    0.000    0.488    0.482
+    MTAS11            1.403    0.058   24.297    0.000    0.973    0.838
+    MTAS12            1.195    0.063   18.839    0.000    0.829    0.648
+    MTAS13            1.109    0.058   19.043    0.000    0.769    0.654
+    MTAS14            0.841    0.064   13.188    0.000    0.584    0.452
+    MTAS15            1.108    0.049   22.381    0.000    0.768    0.771
+    MTAS16            1.072    0.057   18.728    0.000    0.744    0.644
+  WELL_CFA =~                                                           
+    WELL1             1.000                               0.648    0.687
+    WELL2             0.781    0.044   17.885    0.000    0.506    0.550
+    WELL3             1.372    0.059   23.307    0.000    0.889    0.894
+    WELL4             0.875    0.048   18.395    0.000    0.567    0.650
+    WELL5             1.069    0.051   20.928    0.000    0.693    0.747
+    WELL6             1.298    0.068   19.108    0.000    0.841    0.729
+    WELL7             1.136    0.053   21.602    0.000    0.736    0.822
+
+Regressions:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+  MTAS_CFA ~                                                            
+    WELL_CFA         -0.254    0.039   -6.505    0.000   -0.237   -0.237
+
+Covariances:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+ .MTAS2 ~~                                                              
+   .MTAS6             0.394    0.029   13.477    0.000    0.394    0.512
+   .MTAS10            0.418    0.030   13.820    0.000    0.418    0.528
+ .MTAS6 ~~                                                              
+   .MTAS10            0.515    0.031   16.443    0.000    0.515    0.673
+ .MTAS12 ~~                                                             
+   .MTAS16            0.258    0.032    8.093    0.000    0.258    0.298
+ .MTAS7 ~~                                                              
+   .MTAS15            0.114    0.018    6.420    0.000    0.114    0.251
+ .MTAS1 ~~                                                              
+   .MTAS9             0.150    0.019    7.999    0.000    0.150    0.309
+ .WELL1 ~~                                                              
+   .WELL2             0.132    0.020    6.674    0.000    0.132    0.251
+   .WELL6            -0.082    0.021   -4.002    0.000   -0.082   -0.152
+ .WELL3 ~~                                                              
+   .WELL7            -0.073    0.014   -5.360    0.000   -0.073   -0.324
+ .WELL2 ~~                                                              
+   .WELL4            -0.045    0.017   -2.615    0.009   -0.045   -0.088
+   .WELL6            -0.072    0.022   -3.235    0.001   -0.072   -0.119
+
+Intercepts:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+   .MTAS1             3.919    0.032  121.424    0.000    3.919    4.008
+   .MTAS2             3.581    0.032  110.583    0.000    3.581    3.650
+   .MTAS3             3.961    0.032  124.089    0.000    3.961    4.096
+   .MTAS4             2.650    0.041   63.921    0.000    2.650    2.110
+   .MTAS5             3.870    0.032  121.186    0.000    3.870    4.000
+   .MTAS6             3.597    0.033  109.288    0.000    3.597    3.607
+   .MTAS7             3.695    0.036  103.282    0.000    3.695    3.409
+   .MTAS8             3.180    0.040   79.288    0.000    3.180    2.617
+   .MTAS9             3.797    0.035  109.782    0.000    3.797    3.623
+   .MTAS10            3.574    0.033  106.875    0.000    3.574    3.527
+   .MTAS11            3.582    0.038   93.397    0.000    3.582    3.083
+   .MTAS12            2.803    0.042   66.317    0.000    2.803    2.189
+   .MTAS13            3.552    0.039   91.542    0.000    3.552    3.021
+   .MTAS14            3.317    0.043   77.828    0.000    3.317    2.569
+   .MTAS15            3.905    0.033  118.792    0.000    3.905    3.921
+   .MTAS16            2.463    0.038   64.567    0.000    2.463    2.131
+   .WELL1             3.502    0.031  112.582    0.000    3.502    3.716
+   .WELL2             2.722    0.030   89.671    0.000    2.722    2.960
+   .WELL3             3.272    0.033   99.806    0.000    3.272    3.294
+   .WELL4             3.450    0.029  119.942    0.000    3.450    3.959
+   .WELL5             3.585    0.031  117.172    0.000    3.585    3.867
+   .WELL6             3.056    0.038   80.236    0.000    3.056    2.648
+   .WELL7             3.525    0.030  119.368    0.000    3.525    3.940
+   .MTAS_CFA          0.000                               0.000    0.000
+    WELL_CFA          0.000                               0.000    0.000
+
+Variances:
+                   Estimate  Std.Err  z-value  P(&gt;|z|)   Std.lv  Std.all
+   .MTAS1             0.475    0.024   19.698    0.000    0.475    0.497
+   .MTAS2             0.795    0.038   21.081    0.000    0.795    0.826
+   .MTAS3             0.431    0.022   19.535    0.000    0.431    0.461
+   .MTAS4             0.852    0.042   20.047    0.000    0.852    0.540
+   .MTAS5             0.480    0.024   19.891    0.000    0.480    0.513
+   .MTAS6             0.743    0.036   20.877    0.000    0.743    0.747
+   .MTAS7             0.514    0.027   19.187    0.000    0.514    0.437
+   .MTAS8             0.582    0.031   18.937    0.000    0.582    0.394
+   .MTAS9             0.495    0.026   19.380    0.000    0.495    0.451
+   .MTAS10            0.788    0.038   20.934    0.000    0.788    0.768
+   .MTAS11            0.402    0.023   17.600    0.000    0.402    0.298
+   .MTAS12            0.952    0.047   20.225    0.000    0.952    0.581
+   .MTAS13            0.791    0.039   20.218    0.000    0.791    0.572
+   .MTAS14            1.327    0.063   21.011    0.000    1.327    0.796
+   .MTAS15            0.402    0.021   18.905    0.000    0.402    0.405
+   .MTAS16            0.782    0.039   20.248    0.000    0.782    0.586
+   .WELL1             0.469    0.024   19.410    0.000    0.469    0.528
+   .WELL2             0.590    0.029   20.403    0.000    0.590    0.697
+   .WELL3             0.197    0.018   10.747    0.000    0.197    0.200
+   .WELL4             0.438    0.022   20.094    0.000    0.438    0.577
+   .WELL5             0.380    0.020   19.051    0.000    0.380    0.442
+   .WELL6             0.625    0.033   18.828    0.000    0.625    0.469
+   .WELL7             0.259    0.018   14.373    0.000    0.259    0.324
+   .MTAS_CFA          0.454    0.038   12.028    0.000    0.944    0.944
+    WELL_CFA          0.419    0.037   11.436    0.000    1.000    1.000
+
+R-Square:
+                   Estimate
+    MTAS1             0.503
+    MTAS2             0.174
+    MTAS3             0.539
+    MTAS4             0.460
+    MTAS5             0.487
+    MTAS6             0.253
+    MTAS7             0.563
+    MTAS8             0.606
+    MTAS9             0.549
+    MTAS10            0.232
+    MTAS11            0.702
+    MTAS12            0.419
+    MTAS13            0.428
+    MTAS14            0.204
+    MTAS15            0.595
+    MTAS16            0.414
+    WELL1             0.472
+    WELL2             0.303
+    WELL3             0.800
+    WELL4             0.423
+    WELL5             0.558
+    WELL6             0.531
+    WELL7             0.676
+    MTAS_CFA          0.056</code></pre>
+</div>
+</div>
+<p><em>Висновок:</em> Можна побачити, що результати не досягають значень ідеальної моделі, але все ж таки наближені до них. Це могло статись через недосконалість конструкту MTAS, а також кількістю змінних які беруть участь у моделі, а саме конструкт MTAS, конструкт WELL, та конструкт впливу WELL на MTAS. Зважаючи на те, що показники якості все ж таки наближені до ідеального можна розглядати мою початкову гіпотезу на цій моделі. Дана модель може пояснити 5,6% тестової тривоги впливом благополуччя у школі. Latent Variables: всі навантаження є статистично значущими для факторів. У стовпчику стандартизованих навантажень для фактору 1 найбільше значення має показник MTAS11, для фактору 2 найбільше значення має показник WELL3, отже вони мають найбільший вплив латентної змінної. Питання: MTAS11 Just before I take a test/exam, I feel panicky (Безпосередньо перед складанням тесту/іспиту я відчуваю паніку.); WELL3 I feel good at school (Мені добре в школі).</p>
+</section>
+</section>
+<section id="висновки" class="level2">
+<h2 class="anchored" data-anchor-id="висновки">Висновки</h2>
+<p>Дослідження проведено з метою вивчення зв’язку між рівнем шкільного благополуччям та тестовою тривогою. Для досягнення цієї мети було використано базу даних з відповідями 918 респондентів.</p>
+<p>У рамках дослідження у R Studio було використано різні статистичні методи та пакети, наприклад, такі як haven, lavaan.</p>
+<p>Моя початкова гіпотеза звучала так: Існує негативна кореляція між рівнем благополуччя у школі та тривогою під час тестування у підлітків. Тож, отримані результати після проведеного моделювання структурними рівняннями підтверджує цю гіпотезу. Результати після проведення аналізу з використанням простої лінійної моделі давали показник -0.27078 впливу WELL на MTAS, отримані ж результати після проведеного аналізу за допомогою моделювання структурними рівняннями становить -0.237. Фіксується незначне зниження показника впливу, це могло статись через те, що в структурних рівняннях використовувались опрацьовані конструкти, які були підігнані до спостережуваних даних (враховані коваріації) і показник впливу вийшов більш точним. Також відмічаю, що відсоток поясненої дисперсії також знизився і становить 5,6 % проти 6.8% отриманого при лінійному моделюванні, це також могло статись через те що з моделі були відкинуті частки впливу сторонніх факторів.</p>
+<p>Загалом можу підтвердити свою початкову гіпотезу і змінна WELL (шкільне благополуччя) дійсно негативно корелює з залежною змінною MTAS (тестова тривожність), та низький рівень поясненої дисперсії все ж вказує на певну кількість інших факторів які впливають на MTAS, а WELL тільки один із них.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, function() {
+      let href = xref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note !== null) {
+        if (id.startsWith('sec-')) {
+          // Special case sections, only their first couple elements
+          const container = document.createElement("div");
+          if (note.children && note.children.length > 2) {
+            for (let i = 0; i < 2; i++) {
+              container.appendChild(note.children[i].cloneNode(true));
+            }
+            return container.innerHTML
+          } else {
+            return note.innerHTML;
+          }
+        } else {
+          return note.innerHTML;
+        }
+      } else {
+        return "";
+      }
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
