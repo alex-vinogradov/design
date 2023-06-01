@@ -16,7 +16,7 @@ format:
   docx: default
   html:
     css: styles.css
-    theme: superhero
+    theme: cosmo
     monobackgroundcolor: "#000040"
 ---
 
